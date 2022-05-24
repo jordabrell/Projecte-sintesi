@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel='icon' href="./logo.png" type='image/x-icon' sizes="16x16">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>BCN-Telco</title>
@@ -27,27 +28,32 @@
       </div>
     </div>
 </nav>
-<!--undernav-->
 <!--form-->
-<form class="row g-3 needs-validation" novalidate>
-  <div class="col-md-4 position-relative">
+<main class="container">
+  <div class="row g-4">
+      <div class="col-md-8"><br>      
+<form class="row g-3 needs-validation" novalidate
+action="https://formspree.io/f/mayvvnka"
+method="POST">
+  <div class="col-md-2 position-relative">
     <label for="Nom" class="form-label">Nom</label>
     <input type="text" class="form-control" id="Nom" placeholder="Nom"required>
   </div>
-  <div class="col-md-4 position-relative">
+  <div class="col-md-2 position-relative">
     <label for="Cognoms" class="form-label">Cognoms</label>
-    <input type="text" class="form-control" id="Cognoms" placeholder="1r Cognom, 2n Cognom" required>
+    <input type="text" class="form-control" id="Cognoms" placeholder="Cognoms" required>
   </div>
   <div class="col-md-4 position-relative">
     <label for="Email" class="form-label">Email</label>
-      <input type="Email" class="form-control" id="Email" aria-describedby="Email" required>
+      <input type="Email" name="email" class="form-control" id="Email" placeholder="Email" required>
     </div>
   </div>
-  <div class="col-md-3 position-relative">
+<div class="row g-3">
+  <div class="col-md-2 position-relative">
     <label for="Ciutat" class="form-label">Ciutat</label>
     <input type="text" class="form-control" id="Ciutat" required>
   </div>
-  <div class="col-md-6 position-relative">
+  <div class="col-md-3 position-relative">
     <label for="Pais" class="form-label">Pais</label>
     <select class="form-select" id="Pais" required>
       <option selected disabled value="">Escull...</option>
@@ -57,39 +63,29 @@
       <option>Alemanya</option>
     </select>
   </div>
-  <div class="col-md-3 position-relative">
-    <label for="telefón" class="form-label">Número de telefón</label>
-    <input type="text" maxlength="9" class="form-control" id="telefón" required>
+  <div class="col-md-2 position-relative">
+    <label for="telefón" class="form-label">Número de telèfon</label>
+    <input type="text" maxlength="9" class="form-control" id="telefón" required></input>
   </div>
-  <div class="col-md-4 position-relative w-100">
+  <div class="row g-3">
+  <div class="col-md-3 w-50 position-relative">   
     <label for="Missatge" class="form-label">Missatge</label>
-    <input type="text" class="form-control" id="Missatge">
+    <textarea class="form-control" id="mensaje" rows="8"></textarea>    
   </div>
+</div>
+</div>
   <!--button-->
   <div class="col-12">
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Envia</button>
+    <button type="submit" class="btn btn-primary">Envia</button>
 </div>
 <!--button-->
+<hr>
+</article></div>
+</div>
+</main>
 </form>
 <br>
 <!--form-->
-<!--Pop up-->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">Gracies per contactar amb nosaltres!</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-        </div>
-        <div class="modal-body">Missatge enviat amb exit.</div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--Pop up-->
 <!-- Mapa -->
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.325338858719!2d2.1564506922356927!3d41.410455836418485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2b9e7fad90f%3A0xd65e2d045ada7f51!2sPasseig%20d&#39;Amunt%2C%2034%2C%2008024%20Barcelona!5e0!3m2!1sca!2ses!4v1653241689538!5m2!1sca!2ses" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><div class="container">
    <!-- Mapa --> 
