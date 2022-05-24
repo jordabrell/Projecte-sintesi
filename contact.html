@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>BCN-Telco</title>
+</head>
+<body>
+<!--topnav-->
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><img src="./logo.png" width="30" height="30" class="d-inline-block align-top" alt="logo">BCN-Telco</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="./index.html">Inici</a>
+              <a class="nav-link active" aria-current="page" href="./Productos.html">Productes</a>
+              <a class="nav-link active" aria-current="page" href="./Incidencias.html">Incidencies</a>
+              <a class="nav-link active" aria-current="page" href="./reparaciones.html">Reparacions</a>
+              <a class="nav-link active" aria-current="page" href="./contact.html">Contacta'ns</a>
+              <a class="nav-link active" aria-current="page" href="./About.html">About Us</a>
+        </div>
+      </div>
+    </div>
+</nav>
+<!--undernav-->
+<!--form-->
+<form class="row g-3 needs-validation" novalidate>
+  <div class="col-md-4 position-relative">
+    <label for="Nom" class="form-label">Nom</label>
+    <input type="text" class="form-control" id="Nom" placeholder="Nom"required>
+  </div>
+  <div class="col-md-4 position-relative">
+    <label for="Cognoms" class="form-label">Cognoms</label>
+    <input type="text" class="form-control" id="Cognoms" placeholder="1r Cognom, 2n Cognom" required>
+  </div>
+  <div class="col-md-4 position-relative">
+    <label for="Email" class="form-label">Email</label>
+      <input type="Email" class="form-control" id="Email" aria-describedby="Email" required>
+    </div>
+  </div>
+  <div class="col-md-3 position-relative">
+    <label for="Ciutat" class="form-label">Ciutat</label>
+    <input type="text" class="form-control" id="Ciutat" required>
+  </div>
+  <div class="col-md-6 position-relative">
+    <label for="Pais" class="form-label">Pais</label>
+    <select class="form-select" id="Pais" required>
+      <option selected disabled value="">Escull...</option>
+      <option>Espanya</option>
+      <option>Italia</option>
+      <option>França</option>
+      <option>Alemanya</option>
+    </select>
+  </div>
+  <div class="col-md-3 position-relative">
+    <label for="telefón" class="form-label">Número de telefón</label>
+    <input type="text" maxlength="9" class="form-control" id="telefón" required>
+  </div>
+  <div class="col-md-4 position-relative w-100">
+    <label for="Missatge" class="form-label">Missatge</label>
+    <input type="text" class="form-control" id="Missatge">
+  </div>
+  <!--button-->
+  <div class="col-12">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Envia</button>
+</div>
+<!--button-->
+</form>
+<br>
+<!--form-->
+<!--Pop up-->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Gracies per contactar amb nosaltres!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">Missatge enviat amb exit.</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Pop up-->
+<!-- Mapa -->
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.325338858719!2d2.1564506922356927!3d41.410455836418485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2b9e7fad90f%3A0xd65e2d045ada7f51!2sPasseig%20d&#39;Amunt%2C%2034%2C%2008024%20Barcelona!5e0!3m2!1sca!2ses!4v1653241689538!5m2!1sca!2ses" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><div class="container">
+   <!-- Mapa --> 
+  <footer class="py-5">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Secciones</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-muted">Inici</a></li>
+            <li class="nav-item mb-2"><a href="./Productos.html" class="nav-link p-0 text-muted">Productes</a></li>
+            <li class="nav-item mb-2"><a href="./Incidencias.html" class="nav-link p-0 text-muted">Incidències</a></li>
+            <li class="nav-item mb-2"><a href="./About.html" class="nav-link p-0 text-muted">About us</a></li>
+            <li class="nav-item mb-2"><a href="./legal.html" class="nav-link p-0 text-muted">Avís Legal</a></li>
+            <li class="nav-item mb-2"><a href="./privacy.html" class="nav-link p-0 text-muted">Polítiques de Privacitat</a></li>
+            <li class="nav-item mb-2"><a href="./contact.html" class="nav-link p-0 text-muted">Contacta'ns</a></li>
+          </ul>
+        </div>
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>&copy; 2022 BCN-Telco. Tots els drets reservats.</p>
+        <ul class="list-unstyled d-flex">
+            <a href="https://www.instagram.com/bcntelco/"><a href="https://www.instagram.com/bcntelco/"><img src="./insta.png" alt="insta" style="width: 35px; height: 35px"></a>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <!-- Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</body>
+</html>
